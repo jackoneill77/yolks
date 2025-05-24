@@ -266,6 +266,11 @@ is tagged correctly.
   * [`Postgres 14`](/postgres/14)
     * `ghcr.io/parkervcp/yolks:postgres_14`  
 
+### [Poetry](/poetry)
+
+* [`Poetry 2.1.4 with Python 3.13`](/poetry/2.1.4-py13)
+	* `ghcr.io/jackoneill77/yolks:poetry_2.1.4-py13`
+
 ### [Python](/python)
 
 * [`python3.7`](/python/3.7)
