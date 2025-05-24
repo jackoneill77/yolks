@@ -268,8 +268,8 @@ is tagged correctly.
 
 ### [Poetry](/poetry)
 
-* [`Poetry 2.1.4 with Python 3.13`](/poetry/2.1.4-py13)
-	* `ghcr.io/jackoneill77/yolks:poetry_2.1.4-py13`
+* [`Poetry 2.1.3 with Python 3.13`](/poetry/2.1.3-py13)
+	* `ghcr.io/jackoneill77/yolks:poetry_2.1.3-py13`
 
 ### [Python](/python)
 
