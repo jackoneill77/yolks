@@ -10,7 +10,8 @@ ENV POETRY_HOME="/opt/poetry" POETRY_VERSION="2.1.3"
 RUN curl -sSL https://install.python-poetry.org | python3 - --version "${POETRY_VERSION}" \
     && ln -s "${POETRY_HOME}/bin/poetry" /usr/local/bin/poetry
 
-RUN useradd -u 999 -g 987 -m -d /home/container -s /bin/bash container
+RUN groupadd -g 999 container \
+    && useradd -u 999 -g 999 -m -d /home/container -s /bin/bash container
 
 USER container
 ENV USER=container HOME=/home/container
