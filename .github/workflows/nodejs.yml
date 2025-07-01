@@ -2,7 +2,7 @@ name: build nodejs
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * 1"
+    - cron: "0 0 1 * *"
   push:
     branches:
       - master
@@ -16,14 +16,6 @@ jobs:
       fail-fast: false
       matrix:
         tag:
-          - 12
-          - 14
-          - 16
-          - 17
-          - 18
-          - 19
-          - 20
-          - 21
           - 22
           - 23
           - 24
