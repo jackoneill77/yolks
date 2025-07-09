@@ -3,7 +3,7 @@ FROM        --platform=$TARGETOS/$TARGETARCH python:3.13-slim-bookworm
 LABEL       author="Jack O'Neill" maintainer="168836329+jackoneill77@users.noreply.github.com"
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends git curl ca-certificates dnsutils iproute2 procps openssh-client tini file mariadb-client \
+    && apt-get install -y --no-install-recommends git curl openssl jq ca-certificates dnsutils iproute2 procps openssh-client tini file mariadb-client \
     && rm -rf /var/lib/apt/lists/*
 
 ENV POETRY_HOME="/opt/poetry" POETRY_VERSION="2.1.3"
